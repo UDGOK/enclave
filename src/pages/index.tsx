@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Layout from '@components/Layout'
 import Particles from '@components/Particles'
 import TimeDisplay from '@components/TimeDisplay'
+import SocialLinks from '@components/SocialLinks'
 
 const Home: NextPage = () => {
   const [scrollY, setScrollY] = useState(0)
@@ -97,6 +98,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <TimeDisplay />
+      <SocialLinks />
     </Layout>
   )
 }

@@ -4,11 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes underline {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  51% {
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+.animate-underline {
+  animation: underline 0.4s ease-out;
+}
+
 :root {
   --background: #000000;
   --foreground: #ffffff;
   --muted: #888888;
-  --accent: #64ffda;
+  --accent: #ffffff;
   --card: #111111;
 }
 
