@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Retail() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
@@ -12,11 +14,13 @@ export default function Retail() {
           {[1,2,3,4].map(space => (
             <div key={space} className="bg-gray-800 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2">Space #{space}</h3>
-              <img
-                src={`https://source.unsplash.com/random/800x600?retail,store,shopping&${space}`}
-                alt={`Retail space ${space}`}
-                className="mb-4 rounded-lg"
-              />
+          <Image
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Shopping center exterior"
+            width={2070}
+            height={1380}
+            className="rounded-lg shadow-lg"
+          />
               <p className="text-gray-300">Details coming soon</p>
             </div>
           ))}

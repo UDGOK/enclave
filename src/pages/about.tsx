@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
@@ -7,15 +9,17 @@ export default function About() {
         <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <img 
+            <Image
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="Shopping center exterior"
+              width={2070}
+              height={1380}
               className="rounded-lg shadow-lg"
             />
           </div>
           <div>
             <p className="text-gray-300 leading-relaxed">
-              Enclave Bixby is more than just a shopping center - it's a community hub 
+              Enclave Bixby is more than just a shopping center - it&#39;s a community hub 
               that brings together the best of retail, dining, and entertainment.
             </p>
           </div>
