@@ -16,7 +16,7 @@ export default function Layout({ children, title = 'Enclave Bixby' }: LayoutProp
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="bg-primary p-4 text-white shadow-lg">
+      <nav className="bg-black p-4 text-white shadow-lg">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold hover:text-secondary transition-colors">
             Enclave Bixby
@@ -34,7 +34,7 @@ export default function Layout({ children, title = 'Enclave Bixby' }: LayoutProp
         {children}
       </main>
 
-      <footer className="bg-primary text-white mt-8 py-6">
+      <footer className="bg-black text-white mt-8 py-6">
         <div className="container mx-auto text-center">
           <p>&copy; {new Date().getFullYear()} Enclave Bixby. All rights reserved.</p>
           <div className="mt-2 space-x-4">
