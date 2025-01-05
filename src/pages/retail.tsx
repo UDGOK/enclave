@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Retail() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
