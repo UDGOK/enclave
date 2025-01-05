@@ -1,7 +1,9 @@
+
 import { ReactNode } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Menu from './Menu'
+import Particles from './Particles'
 
 type LayoutProps = {
   children: ReactNode
@@ -10,17 +12,32 @@ type LayoutProps = {
 
 export default function Layout({ children, title = 'Enclave Bixby' }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+      {/* Background Particles */}
+      <div className="absolute inset-0 z-0">
+        <Particles />
+      </div>
+      
+      {/* Content Container */}
+      <div className="relative z-10">
       <Head>
         <title>{title}</title>
         <meta name="description" content="Enclave Bixby Shopping Center" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="fixed top-0 right-0 p-4 z-50">
+        <Link href="/" className="text-white text-xl font-bold hover:text-gray-300 transition-colors">
+          Enclave
+        </Link>
+        </div>
+    </div>
       <Menu />
 
-      <main className="container mx-auto p-4 pt-20">
-        {children}
+      <main className="max-w-7xl mx-auto px-6 py-12 pt-20">
+        <div className="prose prose-invert max-w-none">
+          {children}
+        </div>
       </main>
 
       <footer className="bg-black text-white border-t border-white/10">
