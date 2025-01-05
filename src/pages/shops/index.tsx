@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import Layout from '@/components/Layout'
-import ShopCard from '@/components/ShopCard'
+import Layout from '@components/Layout'
+import ShopCard from '@components/ShopCard'
 
 const Shops: NextPage = () => {
   // Temporary mock data

@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Layout from '@/components/Layout'
+import Layout from '@components/Layout'
 
 const Tenant: NextPage = () => {
   return (
@@ -9,23 +9,23 @@ const Tenant: NextPage = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-2xl font-bold mb-4">Rent Status</h2>
-            {/* Rent status content */}
+            <h2 className="text-2xl font-bold mb-4">Rent Payments</h2>
+            {/* Rent payment content */}
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-2xl font-bold mb-4">Payment History</h2>
-            {/* Payment history content */}
+            <h2 className="text-2xl font-bold mb-4">Maintenance Requests</h2>
+            {/* Maintenance request content */}
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-2xl font-bold mb-4">Profile Management</h2>
-            {/* Profile management content */}
+            <h2 className="text-2xl font-bold mb-4">Lease Information</h2>
+            {/* Lease information content */}
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-2xl font-bold mb-4">Support Requests</h2>
-            {/* Support requests content */}
+            <h2 className="text-2xl font-bold mb-4">Contact Management</h2>
+            {/* Contact management content */}
           </div>
         </div>
       </div>
