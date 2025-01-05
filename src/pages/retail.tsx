@@ -11,19 +11,44 @@ export default function Retail() {
           We currently have 4 retail spaces available for lease:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[1,2,3,4].map(space => (
-            <div key={space} className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Space #{space}</h3>
-          <Image
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            alt="Shopping center exterior"
-            width={2070}
-            height={1380}
-            className="rounded-lg shadow-lg"
-          />
-              <p className="text-gray-300">Details coming soon</p>
-            </div>
-          ))}
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Suite A - Gyros By Ali</h3>
+            <p className="text-gray-300 mb-4">Authentic Mediterranean cuisine specializing in gyros, falafel, and hummus.</p>
+            <a href="https://www.gyrosbyali.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Suite B</h3>
+            <p className="text-gray-300">Available for lease - Prime retail space</p>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Suite C - The Eye Institute</h3>
+            <p className="text-gray-300 mb-4">Comprehensive eye care services including LASIK, cataract surgery, and routine eye exams.</p>
+            <a href="https://eyeinst.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Suite D - Oklahoma Credit Union</h3>
+            <p className="text-gray-300 mb-4">Full-service banking with a focus on community support and financial education.</p>
+            <a href="https://www.okcu.org" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Suite E</h3>
+            <p className="text-gray-300">Available for lease - Prime retail space</p>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Suite F</h3>
+            <p className="text-gray-300">Available for lease - Prime retail space</p>
+          </div>
         </div>
       </section>
 
