@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
 import Layout from '@components/Layout'
 import Particles from '@components/Particles'
+import TimeDisplay from '@components/TimeDisplay'
 
 const Home: NextPage = () => {
   const [scrollY, setScrollY] = useState(0)
@@ -95,6 +96,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+      <TimeDisplay />
     </Layout>
   )
 }
