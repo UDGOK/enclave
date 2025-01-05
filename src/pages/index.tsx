@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
-import Layout from '@components/Layout'
 import Particles from '@components/Particles'
 import TimeDisplay from '@components/TimeDisplay'
 import SocialLinks from '@components/SocialLinks'
@@ -18,7 +17,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center bg-black relative overflow-hidden">
         <Particles />
@@ -99,7 +98,7 @@ const Home: NextPage = () => {
       </section>
       <TimeDisplay />
       <SocialLinks />
-    </Layout>
+    </>
   )
 }
 

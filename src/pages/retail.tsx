@@ -12,6 +12,11 @@ export default function Retail() {
           {[1,2,3,4].map(space => (
             <div key={space} className="bg-gray-800 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2">Space #{space}</h3>
+              <img
+                src={`https://source.unsplash.com/random/800x600?retail,store,shopping&${space}`}
+                alt={`Retail space ${space}`}
+                className="mb-4 rounded-lg"
+              />
               <p className="text-gray-300">Details coming soon</p>
             </div>
           ))}

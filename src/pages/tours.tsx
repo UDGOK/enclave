@@ -5,8 +5,12 @@ export default function Tours() {
 
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Shopping Center Tour</h2>
-        <div className="aspect-video bg-gray-800 rounded-lg flex items-center justify-center">
-          <p className="text-gray-300">360° Tour Coming Soon</p>
+        <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Shopping center exterior"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 

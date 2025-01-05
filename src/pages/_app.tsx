@@ -1,12 +1,11 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Menu from '@components/Menu'
+import Layout from '@components/Layout'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Menu />
+    <Layout>
       <Component {...pageProps} />
-    </>
+    </Layout>
   )
 }

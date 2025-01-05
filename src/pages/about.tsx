@@ -5,10 +5,21 @@ export default function About() {
       
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
-        <p className="text-gray-300 leading-relaxed">
-          Enclave Bixby is more than just a shopping center - it's a community hub 
-          that brings together the best of retail, dining, and entertainment.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Shopping center exterior"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div>
+            <p className="text-gray-300 leading-relaxed">
+              Enclave Bixby is more than just a shopping center - it's a community hub 
+              that brings together the best of retail, dining, and entertainment.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="mb-12">
