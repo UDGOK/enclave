@@ -5,9 +5,11 @@ export default function Menu() {
 
   const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Shops', href: '/shops' },
+    { name: 'About', href: '/about' },
+    { name: 'Retail Spaces', href: '/retail' },
+    { name: 'Virtual Tours', href: '/tours' },
     { name: 'Tenant Portal', href: '/tenant' },
-    { name: 'Admin', href: '/admin' }
+    { name: 'Contact', href: '/contact' }
   ]
 
   return (
